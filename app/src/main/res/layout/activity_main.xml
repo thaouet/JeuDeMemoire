@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <Chronometer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textSize="40dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/chrono" />
+    <GridView
+        android:id="@+id/gridview1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth" >
+
+    </GridView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Demarrer"
+        android:onClick="demarrerButtonClick"
+        android:id="@+id/button" />
+</LinearLayout>
